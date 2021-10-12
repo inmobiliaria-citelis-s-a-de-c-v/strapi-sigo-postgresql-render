@@ -12,11 +12,11 @@ module.exports = {
     let entity;
     if (ctx.is('multipart')) {
       const { data, files } = parseMultipartData(ctx);
-      entity = await strapi.services.comment.create(data, { files });
+      entity = await strapi.services.form.create(data, { files });
     } else {
-      entity = await strapi.services.comment.create(ctx.request.body);
+      entity = await strapi.services.form.create(ctx.request.body);
     }
-    entity = sanitizeEntity(entity, { model: strapi.models.comment });
+    entity = sanitizeEntity(entity, { model: strapi.models.form });
 
 
       // send an email by using the email plugin
@@ -35,8 +35,6 @@ module.exports = {
           Kms: ${entity.kms}
         `,
       });
-
-
     return entity;
   },
 };
