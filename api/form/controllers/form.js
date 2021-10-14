@@ -21,8 +21,8 @@ module.exports = {
 
       // send an email by using the email plugin
       await strapi.plugins['email'].services.email.send({
-        to: 'd.silva@citelis.mx',
-        from: 'd.silva@citelis.mx',
+        to: 'concierge@sigosobreruedas.com',
+        from: 'concierge@sigosobreruedas.com',
         subject: 'Nuevo cliente esta interesado en vender su auto',
         text: `
           Cliente: ${entity.name}
