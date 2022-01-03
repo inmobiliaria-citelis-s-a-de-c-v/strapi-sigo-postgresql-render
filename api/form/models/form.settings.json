@@ -44,6 +44,9 @@
         "landing",
         "booth"
       ]
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
