@@ -38,17 +38,13 @@
     "kms": {
       "type": "string"
     },
-    "source": {
-      "type": "enumeration",
-      "enum": [
-        "landing",
-        "booth"
-      ]
-    },
     "price": {
       "type": "decimal"
     },
     "state": {
+      "type": "string"
+    },
+    "source": {
       "type": "string"
     }
   }
